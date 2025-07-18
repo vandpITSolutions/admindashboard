@@ -1,10 +1,11 @@
-/* Students.css */
 .students-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  overflow-x: auto;
 }
 
+/* Form Layout */
 .students-form {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +23,7 @@
 .students-form input,
 .students-form select {
   flex: 1 1 200px;
+  min-width: 150px;
 }
 
 .students-form button {
@@ -29,15 +31,18 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .students-form button:hover {
   background-color: #0056b3;
 }
 
+/* Table Styling */
 .students-table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px;
 }
 
 .students-table th,
@@ -51,12 +56,14 @@
   background-color: #f4f4f4;
 }
 
+/* Buttons */
 .action-btn {
   margin-right: 10px;
   padding: 6px 10px;
   font-size: 12px;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
 }
 
 .edit-btn {
@@ -69,3 +76,21 @@
   color: #fff;
 }
 
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .students-form {
+    flex-direction: column;
+  }
+
+  .students-form input,
+  .students-form select,
+  .students-form button {
+    width: 100%;
+  }
+
+  .students-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
