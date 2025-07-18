@@ -1,0 +1,129 @@
+:root {
+  --bg-light: #f1fdf5;         /* Pale green background */
+  --bg-form: #ffffff;          /* Form white */
+  --bg-accent: #2e7d32;        /* Deep leafy green */
+  --text-primary: #1b3c2f;     /* Darker text */
+  --text-accent: #43a047;      /* Green accent */
+  --button-bg: #66bb6a;        /* Green button */
+  --button-hover: #388e3c;     /* Darker green on hover */
+  --input-border: #c8e6c9;     /* Light green border */
+}
+
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Left column (form) */
+.login-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Form styles */
+.login-form {
+  background-color: var(--bg-form);
+  padding: 35px 45px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  color: var(--bg-accent);
+}
+
+.login-form p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--text-accent);
+  box-shadow: 0 0 4px rgba(0, 188, 212, 0.4);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: var(--button-hover);
+}
+
+.login-form span {
+  color: var(--text-accent);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.login-form span:hover {
+  color: var(--button-hover);
+}
+
+/* Right column (info/branding) */
+.login-right {
+  flex: 1;
+  background-color: var(--bg-accent);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.login-right img {
+  width: 100px;
+  margin-bottom: 25px;
+}
+
+.login-right h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.login-right p {
+  font-size: 16px;
+  max-width: 400px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
