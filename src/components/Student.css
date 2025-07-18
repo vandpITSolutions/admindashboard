@@ -1,0 +1,71 @@
+/* Students.css */
+.students-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.students-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.students-form input,
+.students-form select,
+.students-form button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.students-form input,
+.students-form select {
+  flex: 1 1 200px;
+}
+
+.students-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.students-form button:hover {
+  background-color: #0056b3;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #f4f4f4;
+}
+
+.action-btn {
+  margin-right: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
