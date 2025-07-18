@@ -1,12 +1,20 @@
 :root {
-  --bg-light: #f1fdf5;         /* Pale green background */
-  --bg-form: #ffffff;          /* Form white */
-  --bg-accent: #2e7d32;        /* Deep leafy green */
-  --text-primary: #1b3c2f;     /* Darker text */
-  --text-accent: #43a047;      /* Green accent */
-  --button-bg: #66bb6a;        /* Green button */
-  --button-hover: #388e3c;     /* Darker green on hover */
-  --input-border: #c8e6c9;     /* Light green border */
+  --bg-light: #f1fdf5;
+  /* Pale green background */
+  --bg-form: #ffffff;
+  /* Form white */
+  --bg-accent: #2e7d32;
+  /* Deep leafy green */
+  --text-primary: #1b3c2f;
+  /* Darker text */
+  --text-accent: #43a047;
+  /* Green accent */
+  --button-bg: #66bb6a;
+  /* Green button */
+  --button-hover: #388e3c;
+  /* Darker green on hover */
+  --input-border: #c8e6c9;
+  /* Light green border */
 }
 
 
@@ -126,4 +134,35 @@
   max-width: 400px;
   line-height: 1.6;
   opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    flex: unset;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .login-right {
+    order: -1;
+    /* show branding first on mobile */
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+
+  .login-right h1 {
+    font-size: 24px;
+  }
+
+  .login-right p {
+    font-size: 14px;
+  }
 }
